@@ -1,26 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --darkest: #222831;
+  --dark: #31363f;
+  --light: #ffffffe3;
+  --accent: #76abae;
+  --second-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .nav-container {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #EEEEEE;
-} 
-
-.nav-container img{
-border-radius:0px 2px 2px 0px;
-max-width: 30px;
+  display: flex;
+  background-color: var(--darkest);
+  align-items: center;
 }
 
-section img {
-  width: 200px;
-  margin: 50px;
-  margin-top: 100px;
-
-}
-.hero-container{
-background-color: #12151a;
-
-
+.nav-container li {
+  list-style-type: none;
+  display: inline;
+  justify-content: flex-end;
 }
 
+ul li {
+  justify-content: center;
+  font-family: monospace;
+  color: var(--light);
+  text-shadow: 0px 0px 1px var(--light);
+}
+
+ul .nav-btn {
+  font-family: var(--second-font);
+  font-variant: small-caps;
+  font-size: 0.8em;
+  border-radius: 3px;
+  margin-right: 0.5em;
+  padding: 0.2em;
+}
+
+.nav-btn.btn-log {
+  box-shadow: 0px 0px 1px 0px var(--light);
+  font-size: 0.8em;
+}
+
+h1 {
+  color: var(--light);
+  text-shadow: 1px 1px var(--dark);
+}
+
+header {
+  background-image: url("/img/employee-retention-1110x550.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  text-shadow: 0 0 2px black;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+
+.info-container{
+  display: flex;
+}
