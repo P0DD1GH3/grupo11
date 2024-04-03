@@ -15,8 +15,9 @@
 
 .nav-container {
   display: flex;
-  background-color: var(--darkest);
+  background-color:transparent;
   align-items: center;
+  position: absolute;
 }
 
 .nav-container li {
@@ -55,6 +56,7 @@ header {
   background-image: url("/img/employee-retention-1110x550.png");
   background-repeat: no-repeat;
   background-size: 100vw;
+  height: 100vh;
 }
 .hero-container {
   display: flex;
