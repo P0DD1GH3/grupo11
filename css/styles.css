@@ -15,7 +15,7 @@
 
 .nav-container {
   display: flex;
-  background-color:transparent;
+  background-color: transparent;
   align-items: center;
   position: absolute;
 }
@@ -29,7 +29,7 @@ ul li {
   color: var(--light);
   text-shadow: 0px 0px 1px var(--light);
 }
-li.nav-btn a{
+li.nav-btn a {
   color: var(--light);
   text-decoration: none;
   cursor: pointer;
@@ -43,17 +43,18 @@ ul .nav-btn {
   text-transform: lowercase;
 }
 
-li.nav-btn a{
+li.nav-btn a {
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .nav-container .nav-btn a {
   position: relative;
+  z-index: 2;
 }
 
 .nav-container .nav-btn a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -78,6 +79,9 @@ header {
   background-repeat: no-repeat;
   background-size: 100vw;
   height: 100vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px -3px 20px var(--accent);
 }
 .hero-container {
   display: flex;
@@ -92,21 +96,26 @@ header {
   font-size: 1.7em;
   padding: 1em;
   margin-top: 11.7em;
-  background-color:rgba(255, 255, 255, 0.01); 
-  backdrop-filter: blur(3px); 
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(3px);
   border-radius: 20px; /* Rounded corners */
   max-width: 80%; /* Limit width of the container */
   margin-left: auto; /* Center horizontally */
-  margin-right: auto; 
-  
+  margin-right: auto;
 }
 
-.hero-text h1{
+.hero-text h1 {
   font-size: 5em;
   margin: -50px;
   color: var(--accent);
 }
 
-.info-container{
+.info-container {
   display: flex;
+}
+
+.info-container p {
+  margin-top: 2em;
+  background-color: var(--dark);
+  max-width: 80%;
 }
