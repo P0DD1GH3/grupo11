@@ -75,27 +75,28 @@ h1 {
 }
 
 header {
+  display: flex;
   background-image: url("/img/employee-retention-1110x550.png");
   background-repeat: no-repeat;
+  background-color: var(--dark);
   background-size: 100vw;
-  height: 100vh;
   position: relative;
   z-index: 1;
   box-shadow: 1px -3px 20px var(--accent);
 }
+
 .hero-container {
   display: flex;
   align-items: center;
 }
 
 .hero-text {
-  flex: auto;
   text-align: center;
   color: var(--light);
   text-shadow: 0 0 5px black;
   font-size: 1.7em;
   padding: 1em;
-  margin-top: 11.7em;
+  margin-top: 5.7em;
   background-color: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(3px);
   border-radius: 20px; /* Rounded corners */
@@ -112,10 +113,30 @@ header {
 
 .info-container {
   display: flex;
+  background-color: var(--dark);
+}
+
+.info-container img {
+  width: 400px;
+  margin: 3em;
+  background-color: rgba(57, 207, 241, 0.547);
+  border-radius: 30px;
+  border: solid 5px var(--darkest);
 }
 
 .info-container p {
-  margin-top: 2em;
-  background-color: var(--dark);
-  max-width: 80%;
+  margin-top: 3em;
+  font-family: inherit;
+  color: var(--light);
+  font-size: 1.5em;
+}
+
+.foot-container {
+  background-color:var(--light);
+  height: 10%;
+  
+}
+
+.foot-container p{
+  margin: 0;
 }
