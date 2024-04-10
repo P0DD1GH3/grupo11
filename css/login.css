@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-  color: var(--second-accent);
+  color: var(--accent);
   font-size: 3em;
   margin-bottom: -10px;
 }
@@ -48,7 +48,13 @@ a {
 }
 a:last-child {
   padding-bottom: 1em;
+  transition: font-size 0.1s;
 }
+
+a:last-child:hover{
+  font-size: 17px;
+}
+
 
 .log-container {
   display: flex;
@@ -75,4 +81,11 @@ button {
   background-color: var(--light);
   border-radius: 15px;
   font-weight: 700;
+}
+
+button:hover{
+  background-color: var(--second-accent);
+  color: var(--light);
+  transition: ease-in 0.7s;
+  
 }
