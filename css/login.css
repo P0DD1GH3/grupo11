@@ -28,6 +28,10 @@ h1{
   font-size: 3em;
   margin-bottom: -10px;
 }
+h3{
+  font-weight: 400;
+  margin-right: auto;
+}
 
 p {
   font-family: inherit;
@@ -35,13 +39,14 @@ p {
 }
 input{
   width: 12em;
-  border: 3px solid var(--accent);
+  border: 1px solid transparent;
 }
+
 a{
   text-decoration: none;
   font-weight: 600;
   font-family: var(--second-font);
-  color: var(--dark);
+  color: var(--light-dark);
   margin-bottom: 5px;
 }
 a:last-child{
