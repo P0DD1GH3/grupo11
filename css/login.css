@@ -1,34 +1,31 @@
 @import url(./styles.css);
 
 body {
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
-    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(
-      18% 28% at 24% 50%,
-      #cefaffff 7%,
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(
+      315deg,
+      #00ffff2e 92%,
       #073aff00 100%
     ),
-    radial-gradient(18% 28% at 18% 71%, #4eb5ffff 6%, #073aff00 100%),
-    radial-gradient(70% 53% at 36% 76%, #4eb5ffff 0%, #073aff00 100%),
-    radial-gradient(42% 53% at 15% 94%, #4eb5ffff 7%, #073aff00 100%),
-    radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
-    radial-gradient(18% 28% at 35% 87%, #ffffff59 7%, #073aff00 100%),
-    radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
-    radial-gradient(21% 37% at 72% 23%, #4eb5ffff 24%, #073aff00 100%),
-    radial-gradient(35% 56% at 91% 74%, #4eb5ffff 9%, #073aff00 100%),
-    radial-gradient(74% 86% at 67% 38%, #4eb5ffff 24%, #073aff00 100%),
-    linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+    repeating-radial-gradient(
+      75% 75% at 238% 218%,
+      #00ffff2e 30%,
+      #073aff14 39%
+    ),
+    radial-gradient(99% 99% at 109% 2%, #023730ff 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, #00a991 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #0b0808ff 82%, #0b0a0aff 98%);
   height: 100vh;
-  backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
-h1{
-  color:goldenrod;
+h1 {
+  color: var(--second-accent);
   font-size: 3em;
   margin-bottom: -10px;
 }
-h3{
+h3 {
   font-weight: 400;
   margin-right: auto;
 }
@@ -37,24 +34,23 @@ p {
   font-family: inherit;
   color: var(--light);
 }
-input{
+input {
   width: 12em;
   border: 1px solid transparent;
 }
 
-a{
+a {
   text-decoration: none;
   font-weight: 600;
   font-family: var(--second-font);
   color: var(--light-dark);
   margin-bottom: 5px;
 }
-a:last-child{
+a:last-child {
   padding-bottom: 1em;
 }
 
 .log-container {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,15 +59,15 @@ a:last-child{
   margin-left: auto;
   margin-right: auto;
   background: var(--light);
-  background-color:rgba(245, 243, 243, 0.898);
+  background-color: rgba(245, 243, 243, 0.898);
   border: solid 2px var(--accent);
   height: 200px;
   width: min-content;
   padding: 7em;
   border-radius: 20px;
 }
- 
-button{
+
+button {
   padding: 0.6em 3em;
   margin: 1.5em 1em;
   border: 3px solid var(--accent);
