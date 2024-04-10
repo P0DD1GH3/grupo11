@@ -7,6 +7,7 @@
 :root {
   --darkest: #222831;
   --dark: #31363f;
+  --light-dark:#404651;
   --light: #ffffffe3;
   --accent: #76abae;
   --second-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",

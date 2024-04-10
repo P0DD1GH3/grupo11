@@ -1,35 +1,82 @@
 @import url(./styles.css);
 
 body {
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(0, 152, 155, 1) 0.1%,
-    rgba(0, 94, 120, 1) 94.2%
-  );
-  background-repeat: no-repeat;
+      18% 28% at 24% 50%,
+      #cefaffff 7%,
+      #073aff00 100%
+    ),
+    radial-gradient(18% 28% at 18% 71%, #4eb5ffff 6%, #073aff00 100%),
+    radial-gradient(70% 53% at 36% 76%, #4eb5ffff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #4eb5ffff 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #ffffff59 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #4eb5ffff 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #4eb5ffff 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #4eb5ffff 24%, #073aff00 100%),
+    linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
   height: 100vh;
   backdrop-filter: blur(10px);
   overflow: hidden;
+}
+
+h1{
+  color:goldenrod;
+  font-size: 3em;
+  margin-bottom: -10px;
+}
+h3{
+  font-weight: 400;
+  margin-right: auto;
 }
 
 p {
   font-family: inherit;
   color: var(--light);
 }
+input{
+  width: 12em;
+  border: 1px solid transparent;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--second-font);
+  color: var(--light-dark);
+  margin-bottom: 5px;
+}
+a:last-child{
+  padding-bottom: 1em;
+}
 
 .log-container {
-  background: var(--light);
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--light);
-  height: 200px;
-  width: min-content;
-  padding: 8em;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
+  background: var(--light);
+  background-color:rgba(245, 243, 243, 0.898);
+  border: solid 2px var(--accent);
+  height: 200px;
+  width: min-content;
+  padding: 7em;
   border-radius: 20px;
-  
+}
+ 
+button{
+  padding: 0.6em 3em;
+  margin: 1.5em 1em;
+  border: 3px solid var(--accent);
+  text-transform: uppercase;
+  background-color: var(--light);
+  border-radius: 15px;
+  font-weight: 700;
 }
