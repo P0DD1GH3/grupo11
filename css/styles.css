@@ -106,7 +106,7 @@ h1 {
 
 header {
   /* display: flex; */
-  background-image: url("/img/employee-retention-1110x550.png");
+  background-image: url("../img/employee-retention-1110x550.png");
   background-repeat: no-repeat;
   background-color: var(--dark);
   background-size: 100%;
