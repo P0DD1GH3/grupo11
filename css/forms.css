@@ -1,0 +1,21 @@
+@import url(../css/normalize.css);
+@import url(../css/styles.css);
+
+body{
+    display: grid;
+    grid-template-columns: 
+    "data" 
+    "mensaje imagen";
+}
+
+form{
+    background-color:var(--light);
+    margin: 0 auto;
+    width: 80vw;
+    padding: 2em;
+    margin-top: 1.2em;
+}
+
+a{
+    color: var(--darkest);
+}
