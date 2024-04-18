@@ -73,11 +73,12 @@ button:hover{
 }
 
 #volver{
+  padding-bottom: 0;
   text-align: center;
   background-color: transparent;
   margin: 0 auto;
   font-size: 1.5em;
   border-radius: 25px;
-  border: 2px solid var(--second-accent);
+  border: 3px solid var(--second-accent);
 }
 
