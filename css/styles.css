@@ -2,8 +2,7 @@
 /*style inicialmente con flex - se modifico a grid por simplificacion en posicionamiento - propiedades
 de flex fueron comentadas - Dario 4/13/24*/
 * {
-  font-family: "Titillium Web", sans-serif;
- 
+  font-family: "Titillium Web", sans-serif; 
 }
 
 :root {
