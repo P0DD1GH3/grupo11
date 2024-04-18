@@ -3,6 +3,7 @@
 de flex fueron comentadas - Dario 4/13/24*/
 * {
   font-family: "Titillium Web", sans-serif;
+  margin: 0;
 }
 
 :root {
