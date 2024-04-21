@@ -13,7 +13,7 @@ proyecto se utilizaran las siguientes tecnologias:
 <p>
   El enfoque del proyecto es generar una solución tecnológica, no solamente a el
   rubro medicinal, sino que también a cualquier profesional que brinde un
-  servicio<b>GsTurnos</b> esta enfocado a la simplicidad de gestionar una
+  servicio <b>GsTurnos</b> esta enfocado a la simplicidad de gestionar una
   agenda, en estos tiempos donde parece que todo esta llendo a 200km/h, tratamos
   de facilitar el acceso y la organización de pacientes/clientes desde cualquier
   dispositivo con conexión a internet, y por supuesto un navegador. <br />
