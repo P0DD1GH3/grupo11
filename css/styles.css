@@ -132,7 +132,7 @@ header {
   background-color: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(3px);
   border-radius: 20px;
-  max-width: 80%;
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -158,13 +158,14 @@ header {
 } */
 
 .main-text {
+  max-width: 70%;
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: var(--darkest);
   color: var(--light);
   text-shadow: 0 0 5px black;
   font-size: 2.5em;
-  margin: 1em;
+  margin: 1em auto;
 }
 
 #main-svg {
