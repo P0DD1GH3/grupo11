@@ -2,7 +2,6 @@
 /*style inicialmente con flex - se modifico a grid por simplificacion en posicionamiento - propiedades
 de flex fueron comentadas - Dario 4/13/24*/
 
-
 * {
   font-family: "Titillium Web", sans-serif;
 }
@@ -151,6 +150,19 @@ header {
   margin: 2em;
 }
 
+h3 {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  color: var(--light);
+  text-shadow: 0 0 5px black;
+  font-size: 2.7em;
+  padding: 1em;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* .info-container img {
   grid-column-start: 1;
   border-radius: 25px;
@@ -168,7 +180,8 @@ header {
   margin: 1em auto;
 }
 
-#clock, #farrow {
+#clock,
+#farrow {
   padding-top: 1em;
   display: flex;
   margin: 0 auto;
