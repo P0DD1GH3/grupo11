@@ -168,7 +168,7 @@ header {
   margin: 1em auto;
 }
 
-#main-svg {
+#clock, #farrow {
   padding-top: 1em;
   display: flex;
   margin: 0 auto;
