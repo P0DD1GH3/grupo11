@@ -1,9 +1,6 @@
 @import url(forms.css);
 
 
-body{
-  overflow: hidden;
-}
 
 h1 {
   color: var(--accent);
