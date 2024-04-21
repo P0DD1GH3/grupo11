@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/usercreate.css">
-    <title>Crear usuari@</title>
-    
-    ">
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon/bulb-favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <title>Crear Usuari@</title>
+  </head>
+  <body>
+    <h1>Crear cuenta GsTurnos :_</h1>
+    <form class="form-usuario" action="create-euser" method="get">
+      <label for="nombre">Nombre: </label><br />
+      <input type="text" id="nombre" name="nombre" /><br />
+
+      <label for="apellido">Apellido: </label><br />
+      <input type="text" id="apellido" name="apellido" /><br />
+
+      <label for="email">Correo Electronico: </label><br />
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="telefono">Telefono: </label><br />
+      <input type="tel-number" id="telefono" name="telefono" /><br />
+
+      <!---------------------------------------------------------------->
+
+      <h2>Cuenta USER</h2>
+      <input type="radio" id="user" name="tipo-cuenta" value="user" />
+
+      <label for="user"
+        >Quiero esta cuenta como usuario en busca de profesionales</label
+      ><br />
+
+      <h2>Cuenta ADMIN</h2>
+      <input type="radio" id="admin" name="tipo-cuenta" value="admin" />
+      <label for="user"
+        >Quiero esta cuenta como profesional brindando un servicio</label
+      ><br />
+
+      <input type="submit" name="form-usuario" id="form-usuario" />
+    </form>
+
+    <a id="volver" href="../index.html">
+      <img src="" alt="" /><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="2em"
+        height="2em"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12m16-1h-8l3.5-3.5l-1.42-1.42L6.16 12l5.92 5.92l1.42-1.42L10 13h8z"
+        />
+      </svg>
+    </a>
+  </body>
 </html>
