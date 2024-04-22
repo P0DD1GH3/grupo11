@@ -1,2 +1,10 @@
-@import url(../css/normalize.css);
-@import url(../css/styles.css);
+@import url(normalize.css);
+@import url(styles.css);
+@import url(forms.css);
+
+
+
+form{
+    margin-bottom: 6em;
+    justify-content: center;
+}

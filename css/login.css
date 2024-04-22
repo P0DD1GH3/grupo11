@@ -1,4 +1,5 @@
-@import url(./styles.css);
+@import url(forms.css);
+
 
 
 h1 {
@@ -22,19 +23,17 @@ input {
 }
 
 
-a {
+a .secondary-options{
   text-decoration: none;
   font-weight: 600;
   font-family: var(--second-font);
   color: var(--light-dark);
   margin-bottom: 5px;
-}
-a:last-child {
   padding-bottom: 1em;
   transition: font-size 0.1s;
 }
 
-a:last-child:hover{
+a .secondary-options:hover{
   font-size: 17px;
 }
 
@@ -44,13 +43,14 @@ a:last-child:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 8em;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   background: var(--light);
   background-color: rgba(245, 243, 243, 0.898);
   border: solid 2px var(--accent);
-  height: 200px;
+  height: 300px;
   width: min-content;
   padding: 7em;
   border-radius: 20px;

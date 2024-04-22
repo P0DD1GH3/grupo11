@@ -1,13 +1,18 @@
 @import url(../css/normalize.css);
 @import url(../css/styles.css);
 
+
+
 form {
+  position: relative;
+  top: 3em;
   background-color: var(--light);
   margin: 0 auto;
-  width: 80vw;
+  width: 50vw;
   padding: 2em;
   margin-top: 1.2em;
   border-radius: 7px;
+  margin-bottom: 5em;
 }
 
 a {
