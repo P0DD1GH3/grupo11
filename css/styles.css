@@ -105,6 +105,16 @@ h1 {
   text-shadow: 1px 1px var(--dark);
 }
 
+section.info-container article h3 {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--light);
+  text-shadow: 0 0 5px black;
+  font-size: 2.7em;
+  text-align: center;
+  text-emphasis:var(--second-font);
+}
+
 header {
   /* display: flex; */
   background-image: url("../img/employee-retention-1110x550.png");
@@ -149,7 +159,6 @@ header {
   border-radius: 25px;
   margin: 2em;
 }
-
 
 /* .info-container img {
   grid-column-start: 1;
