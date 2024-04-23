@@ -112,7 +112,7 @@ section.info-container article h3 {
   text-shadow: 0 0 5px black;
   font-size: 2.7em;
   text-align: center;
-  text-emphasis:var(--second-font);
+  text-emphasis: var(--second-font);
 }
 
 header {
