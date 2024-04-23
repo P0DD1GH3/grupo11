@@ -1,8 +1,6 @@
 @import url(../css/normalize.css);
 @import url(../css/styles.css);
 
-
-
 form {
   position: relative;
   top: 3em;
@@ -27,11 +25,9 @@ label {
 textarea {
   width: 100%;
   margin-top: 20px;
-  border: 1px solid  var(--dark);
+  border: 1px solid var(--dark);
   border-radius: 5px;
 }
-
-
 
 input {
   margin: 1em;
@@ -41,9 +37,9 @@ input {
   border: 2px solid var(--accent);
 }
 
-[type="checkbox"], [type="radio"] {
-    width: 1.5em;
-    box-sizing: border-box;
-    padding: 0;
-    
+[type="checkbox"],
+[type="radio"] {
+  width: 1.5em;
+  box-sizing: border-box;
+  padding: 0;
 }

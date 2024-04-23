@@ -1,7 +1,5 @@
 @import url(forms.css);
 
-
-
 h1 {
   color: var(--accent);
   font-size: 3em;
@@ -22,8 +20,7 @@ input {
   border: 1px solid transparent;
 }
 
-
-a .secondary-options{
+a .secondary-options {
   text-decoration: none;
   font-weight: 600;
   font-family: var(--second-font);
@@ -33,10 +30,9 @@ a .secondary-options{
   transition: font-size 0.1s;
 }
 
-a .secondary-options:hover{
+a .secondary-options:hover {
   font-size: 17px;
 }
-
 
 .log-container {
   display: flex;
@@ -66,13 +62,13 @@ button {
   font-weight: 700;
 }
 
-button:hover{
+button:hover {
   background-color: var(--second-accent);
   color: var(--light);
   transition: ease-in 0.7s;
 }
 
-#volver{
+#volver {
   padding-bottom: 0;
   text-align: center;
   background-color: transparent;
@@ -81,4 +77,3 @@ button:hover{
   border-radius: 25px;
   border: 3px solid var(--second-accent);
 }
-
