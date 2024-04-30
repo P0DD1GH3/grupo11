@@ -177,9 +177,10 @@ header {
   margin: 1em auto;
 }
 
-#clock,
+svg#clock,
 #farrow {
-  padding-top: 1em;
+  color: var(--light);
+  padding: 1em;
   display: flex;
   margin: 0 auto;
 }

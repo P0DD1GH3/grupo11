@@ -43,3 +43,41 @@ input {
   box-sizing: border-box;
   padding: 0;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  * {
+    font-size: 0.9em;
+  }
+  div.nav-container ul {
+    font-size: small;
+  }
+
+  form {
+    width: 90%;
+    padding: 0.5em;
+  }
+  label {
+    padding-left: 10%;
+  }
+  input {
+    width: 90%;
+    font-size: medium;
+  }
+  textarea {
+    width: 80%;
+    margin-left: 10%;
+  }
+  footer {
+    font-size: medium;
+  }
+  h2, h4 {
+    font-size: large;
+    margin-left: 10%;
+  }
+
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box;
+    width: 1em;
+  }
+}
