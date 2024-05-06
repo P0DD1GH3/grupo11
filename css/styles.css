@@ -121,7 +121,7 @@ header {
   background-repeat: no-repeat;
   background-color: var(--dark);
   background-size: 100%;
-
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
   box-shadow: 1px -3px 20px var(--accent);

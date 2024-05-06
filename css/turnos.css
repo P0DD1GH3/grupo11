@@ -1,4 +1,4 @@
-@import url(normalize.css);
+
 
 body {
     height: 100%;
@@ -11,12 +11,9 @@ body {
       "footer footer footer footer";
   }
 
-  *{
-    border: 1px solid red;
-  }
-
   nav{
     grid-area: nav;
+    margin-left: 1em;
 
   }
   

@@ -16,6 +16,7 @@ p {
 }
 
 input {
+  font-size: large;
   width: 12em;
   border: 1px solid transparent;
 }
@@ -77,3 +78,4 @@ button:hover {
   border-radius: 25px;
   border: 3px solid var(--second-accent);
 }
+
