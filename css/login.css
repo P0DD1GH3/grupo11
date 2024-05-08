@@ -1,12 +1,13 @@
 @import url(forms.css);
 
 h1 {
-  color: var(--accent);
+  color: white;
   font-size: 3em;
   margin-bottom: -10px;
 }
 h3 {
-  font-weight: 400;
+  padding: 0;
+  color: white;
   margin-right: auto;
 }
 
@@ -25,7 +26,7 @@ a .secondary-options {
   text-decoration: none;
   font-weight: 600;
   font-family: var(--second-font);
-  color: var(--light-dark);
+  color: var(--light);
   margin-bottom: 5px;
   padding-bottom: 1em;
   transition: font-size 0.1s;
@@ -33,23 +34,21 @@ a .secondary-options {
 
 a .secondary-options:hover {
   font-size: 17px;
+  color: white;
 }
 
 .log-container {
+  width: 57%;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3.5em;
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  background: var(--light);
-  background-color: rgba(245, 243, 243, 0.898);
-  border: solid 2px var(--accent);
-  height: 300px;
   width: min-content;
-  padding: 7em;
+  padding: 3em;
   border-radius: 20px;
 }
 
@@ -78,4 +77,3 @@ button:hover {
   border-radius: 25px;
   border: 3px solid var(--second-accent);
 }
-
