@@ -16,24 +16,22 @@ de flex fueron comentadas - Dario 4/13/24*/
   --second-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  background-size: cover;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(
+  /* background-image: repeating-linear-gradient(
       315deg,
-      #00ffff2e 92%,
-      #073aff00 100%
+      #00ffff29 90%,
+      #073aff00 98%
     ),
     repeating-radial-gradient(
       75% 75% at 238% 218%,
-      #00ffff2e 30%,
+      #00ffff2e 13%,
       #073aff14 39%
     ),
-    radial-gradient(99% 99% at 109% 2%, #023730ff 0%, #073aff00 100%),
-    radial-gradient(99% 99% at 21% 78%, #00a991 0%, #073aff00 100%),
-    radial-gradient(160% 154% at 711px -303px, #0b0808ff 82%, #0b0a0aff 98%);
+    radial-gradient(98% 98% at 108% 2%, #02373042 2%, #073aff00 97%),
+    radial-gradient(99% 99% at 21% 78%, #00a99100 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #0b0808 82%, #0b0a0a9e 98%);
+} */
+  /*-----------------------------------------------------------------------------------------------*/
 }
-/*-----------------------------------------------------------------------------------------------*/
-
 body {
   background-size: cover;
   display: grid;
@@ -42,13 +40,19 @@ body {
     "hero"
     "main"
     "footer";
+
+  background: url("../img/GsTurnos\ fondo\ Hero.png");
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .nav-container {
-  /* display: flex; */
-  grid-area: nav;
-  background-color: transparent;
-  align-items: center;
-  position: absolute;
+  display: flex;
+  /* grid-area: nav; */
+  /* background-color: transparent; */
+  /* position: absolute; */
 }
 
 .nav-container li {
@@ -117,14 +121,8 @@ section.info-container article h3 {
 
 header {
   /* display: flex; */
-  background-image: url("../img/employee-retention-1110x550.png");
-  background-repeat: no-repeat;
-  background-color: var(--dark);
-  background-size: 100%;
-  background-attachment: fixed;
-  position: relative;
+  height: 100vh;
   z-index: 1;
-  box-shadow: 1px -3px 20px var(--accent);
 }
 
 .hero-container {
@@ -135,27 +133,21 @@ header {
   text-align: center;
   color: var(--light);
   text-shadow: 0 0 5px black;
-  font-size: 1.7em;
+  font-size: 1.3em;
   padding: 1em;
-  margin-top: 5.7em;
-  background-color: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(3px);
-  border-radius: 20px;
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 10%;
 }
 
 .hero-text h1 {
   font-size: 5em;
-  margin: -50px;
-  color: var(--accent);
+  margin: 7px;
+  color: #ffffff;
+  font-family: emoji;
 }
 
 .info-container {
   display: flex;
   grid-area: main;
-  background-color: rgba(255, 255, 255, 0.01);
   border-radius: 25px;
   margin: 2em;
 }
@@ -170,10 +162,9 @@ header {
   max-width: 70%;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: var(--darkest);
   color: var(--light);
   text-shadow: 0 0 5px black;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 1em auto;
 }
 
@@ -196,5 +187,4 @@ svg#clock,
 .info-container p {
   text-align: justify;
   margin-top: 2em;
-  background-color: rgba(255, 255, 255, 0.01);
 }
