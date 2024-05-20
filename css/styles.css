@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
 /*style inicialmente con flex - se modifico a grid por simplificacion en posicionamiento - propiedades
 de flex fueron comentadas - Dario 4/13/24*/
 
@@ -187,4 +188,29 @@ svg#clock,
 .info-container p {
   text-align: justify;
   margin-top: 2em;
+}
+
+#cta-btn{
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px 0px;
+  display: flex;
+  margin: auto;
+  color: var(--light);
+  width: 10em;
+  height: 4em;
+  border: 2px solid;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+
+#cta-btn:hover{
+  transition: 10ms ease-in;
+  color: var(--darkest);
+  background-color: var(--light);
 }
