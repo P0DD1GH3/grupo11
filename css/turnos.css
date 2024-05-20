@@ -1,34 +1,37 @@
-
+html{
+  height: cover;
+}
 
 body {
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     display: grid;
     grid-template-areas:
       "nav nav nav nav"
-      "calendario turnos turnos turnos"
-      "botonera turnos turnos turnos"
+      "turnos turnos turnos turnos"
       "footer footer footer footer";
   }
 
   nav{
     grid-area: nav;
     margin-left: 1em;
+    padding: 1em;
 
   }
-  
-  div.calendario{
-    grid-area: calendario;
-    
-  }
 
-  div.turnos{
-    grid-area: turnos;
-  }
-
-  div.botonera{
-    grid-area: botonera;
-  }
   footer{
     grid-area: footer;
   }
+
+  .calendly-inline-widget{
+   
+    min-height: max-content;
+    display: block;
+  }
+
+  #turnos-head{
+    grid-area: texto;
+  }
+
+  
+
