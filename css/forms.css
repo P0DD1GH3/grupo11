@@ -52,6 +52,15 @@ input {
   box-sizing: border-box;
   padding: 0;
 }
+.hero-text>h2{
+  margin-top: -40px;
+}
+
+.hero-text>p{
+  margin-left: 10em; 
+  margin-right: 10em;
+}
+
 
 @media (min-width: 320px) and (max-width: 768px) {
   * {
