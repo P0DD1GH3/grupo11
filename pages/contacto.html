@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/footer.css">
   <title>GsContacto</title>
 </head>
+
 <body>
   <nav>
     <div class="nav-container">
@@ -29,18 +30,18 @@
 
   <h2>Contacto</h2>
 
-  <form class="form-contacto" action="send-to-email" method="get">
+  <form id="form-contacto" action="../pages/contacto.html" method="get">
     <label for="nombre">Nombre: </label><br>
-    <input type="text" id="nombre" name="nombre"><br>
+    <input type="text" id="nombre" name="nombre" required><br>
 
     <label for="apellido">Apellido: </label><br>
-    <input type="text" id="apellido" name="apellido"><br>
+    <input type="text" id="apellido" name="apellido" required><br>
 
-    <label for="email">Correo Electronico: </label><br>
-    <input type="email" id="email" name="email"><br>
+    <label for="email">Correo Electrónico: </label><br>
+    <input type="email" id="email" name="email" required><br>
 
-    <label for="telefono">Telefono: </label><br>
-    <input type="tel" id="telefono" name="telefono"><br>
+    <label for="telefono">Teléfono: </label><br>
+    <input type="tel" id="telefono" name="telefono" required><br>
 
     <h4>Asunto de Contacto</h4>
 
@@ -69,6 +70,7 @@
       </div>
     </div>
   </footer>
+  <script src="../DOM/validation.js"></script>
 </body>
 
 </html>
