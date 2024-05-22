@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const apellido = document.querySelector("#apellido");
       const email = document.querySelector("#email");
       const telefono = document.querySelector("#telefono");
-      const radioBtn = document.querySelector(`input[name="tipo-contacto"]:checked`);
+      const messageTypeBtn = document.querySelector(`input[name="tipo-contacto"]:checked`);
+      const userTypeRadioBtn = document.querySelectorAll(`input[name="tipo-cuenta"]:checked`);
 
       let valid = true;
 
@@ -33,17 +34,31 @@ document.addEventListener("DOMContentLoaded", () => {
          alert("Por favor ingrese una dirección de correo válida");
       }
 
+      if (telefono.value.trim() === "") {
+         valid = false;
+         alert("Teléfono requerido");
+      }
 
-      if (!radioBtn) {
+
+      if (!messageTypeBtn) {
          valid = false;
          alert("Seleccione motivo de contacto");
       }
 
+      
+
+      if (!userTypeRadioBtn) {
+         valid = false;
+         alert("Seleccione tipo de cuenta");
+      }
+
       if (valid) {
 
-         alert('Formulario enviado con éxito!');
+         alert('Enviado con éxito!');
 
       }
+
+   
    });
 
    const validarEmail = (email) => {
