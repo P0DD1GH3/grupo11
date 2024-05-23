@@ -2,68 +2,77 @@
  pagina en totalidad antes de establecer el script, 
  es decir se asegura de que el botón de submit este cargado para utilizarlo*/
 
-document.addEventListener("DOMContentLoaded", () => {
-   const formulario = document.querySelector("#form-contacto");
-
-   formulario.addEventListener("submit", (e) => {
-      e.preventDefault(); // método que previene form submission
-
-      const nombre = document.querySelector("#nombre");
-      const apellido = document.querySelector("#apellido");
-      const email = document.querySelector("#email");
-      const telefono = document.querySelector("#telefono");
-      const messageTypeBtn = document.querySelector(`input[name="tipo-contacto"]:checked`);
-      const userTypeRadioBtn = document.querySelectorAll(`input[name="tipo-cuenta"]:checked`);
-
-      let valid = true;
-
-      if (nombre.value.trim() === "") {
+ document.addEventListener("DOMContentLoaded", () => {
+   const formularios = document.querySelectorAll("form");
+ 
+   formularios.forEach(formulario => {
+     formulario.addEventListener("submit", (e) => {
+       e.preventDefault(); // Prevenir envío del formulario por defecto
+ 
+       const nombre = formulario.querySelector("#nombre");
+       const apellido = formulario.querySelector("#apellido");
+       const email = formulario.querySelector("#email");
+       const telefono = formulario.querySelector("#telefono");
+       const messageTypeBtn = formulario.querySelector(`input[name="tipo-contacto"]:checked`);
+       const userTypeRadioBtn = formulario.querySelectorAll(`input[name="tipo-cuenta"]:checked`);
+ 
+       let valid = true;
+ 
+       // Limpieza de mensajes de error previos
+       formulario.querySelectorAll('.error').forEach(error => error.textContent = '');
+ 
+       if (nombre && nombre.value.trim() === "") {
          valid = false;
-         alert("Nombre y apellido requerido");
-      }
-      if (apellido.value.trim() === "") {
+         mostrarError(nombre, "Nombre requerido");
+       }
+       if (apellido && apellido.value.trim() === "") {
          valid = false;
-         alert("Apellido requerido");
-      }
-
-      if (email.value.trim() === "") {
+         mostrarError(apellido, "Apellido requerido");
+       }
+ 
+       if (email && email.value.trim() === "") {
          valid = false;
-         alert("Email requerido");
-      } else if (!validarEmail(email.value.trim())) {
+         mostrarError(email, "Email requerido");
+       } else if (email && !validarEmail(email.value.trim())) {
          valid = false;
-         alert("Por favor ingrese una dirección de correo válida");
-      }
-
-      if (telefono.value.trim() === "") {
+         mostrarError(email, "Por favor ingrese una dirección de correo válida");
+       }
+ 
+       if (telefono && telefono.value.trim() === "") {
          valid = false;
-         alert("Teléfono requerido");
-      }
-
-
-      if (!messageTypeBtn) {
+         mostrarError(telefono, "Teléfono requerido");
+       }
+ 
+       if (!messageTypeBtn) {
          valid = false;
-         alert("Seleccione motivo de contacto");
-      }
-
-      
-
-      if (!userTypeRadioBtn) {
+         mostrarError(formulario.querySelector("input[name='tipo-contacto']").parentElement, "Seleccione motivo de contacto");
+       }
+ 
+       if (userTypeRadioBtn.length === 0) {
          valid = false;
-         alert("Seleccione tipo de cuenta");
-      }
-
-      if (valid) {
-
+         mostrarError(formulario.querySelector("input[name='tipo-cuenta']").parentElement, "Seleccione tipo de cuenta");
+       }
+ 
+       if (valid) {
          alert('Enviado con éxito!');
-
-      }
-
-   
+         formulario.submit(); // Solo se envía el formulario si todos los campos son válidos
+       }
+     });
    });
-
+ 
    const validarEmail = (email) => {
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email);
+     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+     return re.test(email);
    }
-
-});
+ 
+   const mostrarError = (elemento, mensaje) => {
+     let errorDiv = elemento.parentElement.querySelector('.error');
+     if (!errorDiv) {
+       errorDiv = document.createElement('div');
+       errorDiv.classList.add('error');
+       elemento.parentElement.appendChild(errorDiv);
+     }
+     errorDiv.textContent = mensaje;
+   }
+ });
+ 
